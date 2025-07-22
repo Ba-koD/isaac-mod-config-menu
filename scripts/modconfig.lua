@@ -2992,6 +2992,11 @@ if ModConfigMenu.StandaloneMod then
   end
 end
 
+function ModConfigMenu.GetCurrentFocus()
+  -- updateCurrentMenu() -- Not sure if this is needed but it works even without it
+  return currentMenuCategory, currentMenuSubcategory, currentMenuOption
+end
+
 ------------
 --FINISHED--
 ------------
